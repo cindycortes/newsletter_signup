@@ -19,7 +19,10 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 
-const app = express (); 
+const app = express(); 
+
+app.use(express.static('public')); // use the css styling for the static page
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.listen(3000, function() {
     console.log('Server is running on port 3000');
@@ -32,3 +35,10 @@ bootstrap link will be placed in the signup.html file
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 the CSS styling will be from the original link signin.css
+
+Step 7: 
+
+convert image from jpeg to png
+
+Step 8:
+
