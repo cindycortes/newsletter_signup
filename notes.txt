@@ -61,3 +61,29 @@ app.post('/', function (req, res) {
 })
 
 In Html form element, use the post method and action to "/"
+
+Step 9:
+Incorporating API from Mailchimp 
+https://developer.mailchimp.com/
+
+API reference
+API key dcd2fba501a611f9bcadb67785dc1cfa-us20
+
+ var data = {
+        members: [
+            {
+                email_address: email,
+                status: "subscribed"
+            }
+        ]
+    };
+    var jsonData = JSON.stringify(data);
+
+    var options = {
+        url: 'https://us20.api.mailchimp.com/3.0/lists/9453f6c7fc',
+        method: "POST",
+        headers: {
+            "Authorization": "cindy1 dcd2fba501a611f9bcadb67785dc1cfa-us20"
+        },
+        body: jsonData
+    };
