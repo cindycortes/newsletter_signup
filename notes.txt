@@ -42,3 +42,22 @@ convert image from jpeg to png
 
 Step 8:
 
+Setting up the get and post route
+
+// Get Route
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + "/signup.html");
+})
+
+// Post Route
+app.post('/', function (req, res) {
+    
+    var firstName = req.body.fName;
+    var lastName = req.body.lName;
+    var email = req.body.email;
+
+    console.log(firstName, lastName, email);
+
+})
+
+In Html form element, use the post method and action to "/"
