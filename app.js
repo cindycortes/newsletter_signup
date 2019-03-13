@@ -4,6 +4,7 @@ const request = require('request')
 
 const app = express(); 
 
+app.use(express.static('public')); // use the css styling for the static page
 
 // Get Route
 
