@@ -3,10 +3,16 @@ Create folder in directory
 
 Step 2: 
 
+npm init
+
+Step 3:
+
 npm install body-parser express request
 
-Step 3: 
+Step 4: 
+Create app.js, signup.html, success.html, failure.html files
 
+Step 5: 
 In app.js file, use boiler plate to start new project:
 
 const express = require('express')
@@ -20,3 +26,9 @@ app.listen(3000, function() {
 });
 
 
+Step 6: 
+Bootstrap Examples, Sign-In form
+bootstrap link will be placed in the signup.html file
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+the CSS styling will be from the original link signin.css
